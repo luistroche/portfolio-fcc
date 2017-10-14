@@ -1,1 +1,1 @@
-# Portfolio Webpage for [freecodecamp.org](http://freecodecamp.org). :smile: /play yeah
+# Portfolio Webpage for [freecodecamp.org](http://freecodecamp.org). 
