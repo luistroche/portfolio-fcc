@@ -39,7 +39,7 @@ console.log(rangeOfNumbers(4, 4));*/
 */
 
 
-var contenido =
+var rangeOfNumbersTutorial =
 `function rangeOfNumbers(startNum, endNum) {  
    </br>  if (startNum === endNum){ 
    </br>  return [startNum 
@@ -57,5 +57,16 @@ var contenido =
 
 // document.getElementById("codigo").innerText = contenido;
 // console.log(document.getElementById("codigo"));
+let rangeOfNumberCountDown =
+` </br> function countdown(n) {
+  </br>if (n < 1){
+  </br>return [];
+  </br>}else{
+  </br>let contar = countdown(n -1);
+  </br>contar.unshift(n);
+  </br>return contar;
+  </br>}
+  </br>} `;
 
-document.getElementById("codigo").innerHTML = '<article> '+ contenido +' </article';
+document.getElementById("codigo").innerHTML = `<article> ${rangeOfNumbersTutorial} </article>`;
+document.getElementById("codigo").innerHTML = `<article> ${rangeOfNumberCountDown} </article>`;
