@@ -21,8 +21,8 @@ console.log(rangeOfNumbers(6, 9));
 console.log(rangeOfNumbers(4, 4));*/
 
 
-var contenido =
 
+/*var contenido=
 "function rangeOfNumbers(startNum, endNum) {  \n" + "</br> " +
 " if (startNum === endNum){ \n" + " </br> " +
 " return [startNum \n" + " </br> " +
@@ -34,7 +34,26 @@ var contenido =
 "} \n \n" + " </br> " +
 "console.log(rangeOfNumbers(1, 5)); \n" + " </br> " +
 "console.log(rangeOfNumbers(6, 9)); \n" + " </br> " +
-"console.log(rangeOfNumbers(4, 4));\n" + " </br> " ;
+"console.log(rangeOfNumbers(4, 4));\n" + " </br> " +
+
+*/
+
+
+var contenido =
+`function rangeOfNumbers(startNum, endNum) {  
+   </br>  if (startNum === endNum){ 
+   </br>  return [startNum 
+   </br> }else{ 
+   </br> let numeros = rangeOfNumbers(startNum, endNum -1); 
+   </br> numeros.push(endNum); 
+   </br> return numeros; 
+   </br> } 
+   </br> } 
+   
+   </br> console.log(rangeOfNumbers(1, 5)); 
+   </br> console.log(rangeOfNumbers(6, 9)); 
+   </br> console.log(rangeOfNumbers(4, 4));
+   </br> ` ;
 
 // document.getElementById("codigo").innerText = contenido;
 // console.log(document.getElementById("codigo"));
