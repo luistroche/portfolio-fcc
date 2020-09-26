@@ -1,2 +1,16 @@
-#if { color: red;
-            font-size: 24px;}
+#if { 
+    color: red;
+    font-size: 24px;
+}
+#while { 
+    color: blue;
+    font-size: 24px;            
+}
+.brackets-class {
+    font-size: 24px;
+    color: rgb(20, 90, 6);
+} 
+.functions-class {
+    font-size: 24px;
+    color: rgb(65, 21, 136);
+}           
