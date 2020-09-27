@@ -19,7 +19,7 @@ var rangeOfNumbersTutorial =
    </br> console.log(rangeOfNumbers(1, 5)); 
    </br> console.log(rangeOfNumbers(6, 9)); 
    </br> console.log(rangeOfNumbers(4, 4));
-   </br> ` ;
+   </br> var ` ;
 
 
 
@@ -49,7 +49,8 @@ function formateando(suString){
         produ = produ.replace(/while/g, "<span id='while' class='while-class'>while</span>");
         produ = produ.replace(/{/g, "<span id='brackets' class='brackets-class'> &#123 </span>");
         produ = produ.replace(/}/g, "<span id='brackets' class='brackets-class'> &#125 </span>");
-        produ = produ.replace(/function/g, "<span id='functions' class='functions-class'>function</span>");
+        produ = produ.replace(/let/g, "<span id='funct' class='funct-class'>let</span>");
+        produ = produ.replace(/function/g, "<span id='funct' class='funct-class'>function</span>");
         return produ;
 
     }
@@ -59,5 +60,5 @@ function formateando(suString){
 
 console.log(formateando(contenido));
 
-document.getElementById("agregar").innerHTML= `<article> ${formateando(rangeOfNumbersTutorial)}  </article`;
+document.getElementById("agregar").innerHTML= `<article> ${formateando(rangeOfNumbersTutorial)} </article`;
 
