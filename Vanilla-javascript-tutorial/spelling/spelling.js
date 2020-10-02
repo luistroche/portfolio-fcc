@@ -51,6 +51,14 @@ function formateando(suString){
         produ = produ.replace(/}/g, "<span id='brackets' class='brackets-class'> &#125 </span>");
         produ = produ.replace(/let/g, "<span id='funct' class='funct-class'>let</span>");
         produ = produ.replace(/function/g, "<span id='funct' class='funct-class'>function</span>");
+        // produ = produ.replace(/rangeofnumbers/gi, `<span id='varNames' class='varNames' >${/[funcion . (]/}</span>`);
+        //  var variableRegex =   new RegExp('(function)\s[a-zA-Z]*\w', 'g');
+
+        // produ = produ.replace(/ [a-z]*\(/gi, `<span id='varNames' class='varNames' >${variableRegex.test(produ)}</span>`);
+       
+        //crear una funcion que tome el resultado de la busqueda del regex y lo guarde para luego dar un return con
+        //el resultado formateado.
+        produ = produ.replace(/\s[a-zA-Z]*\w?(\()/g, `<span id='varNames' class='varNames' > otra cosa </span>`);
         return produ;
 
     }
